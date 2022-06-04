@@ -1,0 +1,60 @@
+package Java2a11;
+
+public class Room {
+	
+	double len ,wd,hg;
+	Room(double a,double b,double c)
+	{
+		len=a;  wd=b;  hg=c;
+		}
+	
+	
+	Room(double a,double b)
+	
+	{
+		len=a;  wd=b;  hg=12;
+	}
+	
+	
+	Room(double a)
+	{
+		len= wd=a;  hg=12;
+	}
+	
+	double RoomArea()
+	{return len*wd;}
+	double RoomVol()
+	{return len*hg;
+	
+}//end class
+	
+	
+	class ChkRoom
+	
+	{
+		public static void main(String[]args)
+		{
+		Room lt15=new Room(15);
+		Room Lab1=new Room(20,30);
+		Room seminarhall=new Room(400,300,20);
+		
+		double ar ,vl;
+		
+		ar=lt15.RoomArea();
+		vl=lt15.RoomVol();
+		
+		System.out.println("lt15 ar and vol is "+ar+""+vl);
+		
+		ar=Lab1.RoomArea();
+		vl=Lab1.RoomVol();
+		
+		System.out.println("Lab ar and vol is"+ar+""+vl);
+		
+		ar=seminarhall.RoomArea();
+		vl=seminarhall.RoomVol();
+		
+		System.out.println("seminarhall ar and vol is "+ar+""+vl);
+		
+	}
+	}
+}//end class
