@@ -1,0 +1,33 @@
+package Java2a11;
+
+public class Calculate {
+		
+		double multi(double a,double b)
+		{return a*b;}
+		
+		
+		double multi(double x,double y,double z)
+		{return x*y*z;}
+		
+		double multi(double a)
+		{return a*1;}
+
+		
+		public static void main(String[] args) {	
+		Calculate obj1=new Calculate();
+  
+		 double result;
+		 result=obj1.multi(11);
+		 System.out.println("multiply with one number"+result);
+		 
+		 
+		 result=obj1.multi(4,8);
+		 System.out.println("multiply with two number"+result);
+		 
+		 
+		 result=obj1.multi(1,2,3);
+		 System.out.println("multiply with two number"+result);
+	
+	}
+
+}
